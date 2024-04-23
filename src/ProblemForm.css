@@ -1,0 +1,48 @@
+.problem-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   }
+   .heading {
+    margin-top: 80px;
+     text-align: center;
+     margin-bottom: 20px;
+ 
+   }
+   
+   .problem-form input,
+   .problem-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   }
+   
+   .problem-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   
+   .problem-form button:hover {
+    background-color: #0056b3;
+   }
+   .heading-container {
+    text-align: center;
+}
+   .submission-message {
+    display: inline-block; /* Adjust the display property */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px; /* Padding around the text */
+    margin-top: 10px; /* Margin above the message */
+    border-radius: 5px; /* Rounded corners */
+    
+   }

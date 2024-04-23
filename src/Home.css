@@ -1,0 +1,82 @@
+
+/* hero image  */
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  filter: blur(2px);
+  border-radius: 4px solid black;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Center the content horizontally */
+}
+.services-heading {
+  text-align: center;
+  margin-bottom: 20px; /* Add some space below the heading */
+ }
+ 
+ .services-heading h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #343a40; /* Dark grey text */
+ }
+
+/* Cards Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns cards to the start of the container */
+    padding: 20px;
+    margin-right:-60px; /* Adds padding around the cards section */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;}
+    .card {
+      background-color: #f8f9fa; /* Light grey background */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Slight shadow for depth */
+      margin: 20px;
+      padding: 20px;
+      width: 300px; /* Fixed width for each card */
+      text-align: center; /* Center the text */
+     }
+     
+     .card h2 {
+      margin-top: 0; /* Remove default margin */
+      color: #343a40; /* Dark grey text */
+     }
+     
+     .card p {
+      color: #495057; /* Slightly lighter grey for the text */
+     }
+   .footer {
+    margin-top: 20px;
+   }
+/* Responsive styles */
+@media (max-width: 768px) {
+  .cards {
+    max-width: 100%; /* Make cards take full width on smaller screens */
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+ }
+ 
+ @media (max-width: 480px) {
+  .card {
+    height: auto; /* Adjust height for very small screens */
+  }
+ }

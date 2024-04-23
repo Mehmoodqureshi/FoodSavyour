@@ -1,0 +1,104 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the navbar is positioned relatively */
+   }
+   
+   .logo-container {
+    display: flex;
+    align-items: center;
+   }
+   
+   .logo {
+    height: 50px;
+    margin-right: auto;
+   }
+   
+   .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+   }
+   
+   .nav-item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+   }
+   
+   .report-problem {
+    display: flex;
+    align-items: center;
+   }
+   
+   .menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+   }
+   
+   .menu-btn div {
+    width: 2rem;
+    height: 0.25rem;
+    background: #333;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+   }
+   
+   .nav-menu {
+    display: none;
+    position: absolute; /* Position the menu absolutely */
+    top: 100%; /* Place it directly under the navbar */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px;
+   }
+   
+   .nav-menu.active {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
+   /* Responsive styles */
+   @media (max-width: 768px) {
+    .nav-links {
+       display: none;
+    }
+   
+    .report-problem {
+       justify-content: flex-end;
+    }
+   
+    .menu-btn {
+       display: flex;
+    }
+   
+    .nav-menu {
+       display: none;
+    }
+   
+    .nav-menu.active {
+       display: flex;
+    }
+   }

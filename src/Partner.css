@@ -1,0 +1,22 @@
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+   }
+   
+   .card {
+    flex: 1 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px);
+   }
+   .partners-section {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+   }
+   
+   .partners-section h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 20px; /* Add some space below the heading */
+   }
